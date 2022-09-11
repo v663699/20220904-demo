@@ -1,0 +1,473 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.section {
+  width: 100%;
+  height: 800px;
+  color: balck;
+}
+
+/* section1 */
+
+.section1 {
+  background: url("https://images.unsplash.com/photo-1643297536219-b34953f96263?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  margin: 10px 50px;
+  background: url("https://worldoceanday.org/wp-content/uploads/2020/02/WOD_WEB_Logo_Horizontal_White.png?download=1");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 50px;
+}
+
+.menu {
+  padding: 6px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.live-btn {
+  background: #d75281;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 8px;
+}
+
+.live-btn:hover {
+  background: #b93160;
+}
+
+.search {
+  margin: 15px;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.section1 .left-container {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.small-title {
+  font-size: 12px;
+}
+
+.section1 .left-container .small-title {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+
+.more-btn {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.more-btn:hover::after {
+  opacity: 0;
+}
+
+.more-btn::after {
+  content: "";
+  width: 160px;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+.more-btn::before {
+  content: "+";
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+}
+
+.section1 .right-container {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.next-btn {
+  font-size: 60px;
+  margin-left: 80px;
+}
+
+.next-btn i {
+  cursor: pointer;
+}
+
+.section1 h2 {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* section2 */
+
+.section2 {
+  height: 1500px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.section2 .left-container {
+  margin: 200px 300px 50px 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.section2 .right-container {
+  margin: 200px 50px 50px 50px;
+}
+
+.section2 h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section2 .more-btn:hover::after {
+  opacity: 0;
+}
+
+.section2 .more-btn::after {
+  content: "";
+  width: 160px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+.section2 p {
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 0px 50px 50px 50px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 影片位置好像整個往右移了該如何處理？ */
+
+.section2 .video-word {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.section2 .content {
+  margin: 0px 400px 0px 50px;
+}
+
+.video-btn {
+  display: flex;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 100px;
+  padding: 10px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.ri-play-circle-line {
+  font-size: 40px;
+  padding-right: 20px;
+}
+
+/* Section3 */
+
+.section3 {
+  margin: 100px 200px 0px 50px;
+  display: flex;
+  align-items: flex-start;
+  height: 600px;
+}
+
+.section3 h2 {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.section3 h1 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.section3 .right-container {
+  margin-left: 200px;
+}
+
+.part {
+  margin-bottom: 80px;
+  width: 220px;
+}
+
+.part .title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.part .content {
+  font-size: 12px;
+}
+
+.part3 {
+  width: 230px;
+}
+
+/* section4 */
+
+.section4 h1 {
+  text-align: center;
+}
+
+.section4 .container {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+}
+
+.pic-container {
+  display: flex;
+  align-items: center;
+}
+
+.pic-menus {
+  margin-right: 30px;
+}
+
+.pic {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.pic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.ri-checkbox-blank-circle-fill {
+  display: block;
+  font-size: 5px;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  border: 1px white solid;
+  border-radius: 50px;
+  transition: border-color 0.5s ease;
+}
+
+.ri-checkbox-blank-circle-fill:hover {
+  border-color: black;
+}
+
+.section4 .left-container {
+  margin: 50px;
+}
+
+.section4 .content {
+  margin: 10px 0px 30px 0px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.rd-btn {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rd-btn::after {
+  content: "";
+  width: 85px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.rd-btn:hover::after {
+  opacity: 0;
+}
+
+/*  Hover 版 */
+
+/* .pic-menu2::after {
+  content: "";
+  width: 400px;
+  height: 600px;
+  background: url("https://images.unsplash.com/photo-1519747180378-d55bc9a23efd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -273px;
+  left: 103px;
+  z-index: 2;
+  opacity: 0;
+} */
+
+/* .pic-menu2:hover::after {
+  opacity: 1;
+} */
+
+/* .pic-menu3::after {
+  content: "";
+  width: 400px;
+  height: 600px;
+  background: url("https://images.unsplash.com/photo-1591025207163-942350e47db2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -347px;
+  left: 103px;
+  z-index: 2;
+  opacity: 0;
+} */
+
+/* .pic-menu3:hover::after {
+  opacity: 1;
+} */
+
+/* target版 */
+/* a {
+  color: black;
+  text-decoration: none;
+}
+
+#pic {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#pic1 {
+  opacity: 1;
+}
+
+#pic2 {
+  opacity: 0;
+}
+
+#pic3 {
+  opacity: 0;
+}
+
+#pic1:target {
+  opacity: 1;
+}
+
+#pic2:target {
+  opacity: 1;
+}
+
+#pic3:target {
+  opacity: 1;
+} */
+
+.section5 h1 {
+  margin: 200px 50px 50px;
+}
+
+.section5 .top-container,
+.section5 .bottom-container {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.section5 .bottom-container {
+  margin-top: 70px;
+}
+
+.section5 .top-container .pic {
+  background-color: blue;
+  width: 500px;
+  height: 400px;
+  margin-right: 45px;
+}
+
+.section5 h2 {
+  font-size: 42px;
+}
+
+.section5 .right-container p {
+  width: 380px;
+  margin: 25px 0px;
+}
+
+.section5 .more-btn::after {
+  background: black;
+}
+
+.section5 .bottom-container .pic {
+  background-color: red;
+  width: 300px;
+  height: 200px;
+  margin-right: 45px;
+}
